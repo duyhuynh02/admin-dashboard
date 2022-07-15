@@ -221,16 +221,33 @@ h3 {
     gap: 1rem 1rem;
 }
 
-.quotes .card {
+.quotes .cards .card {
     padding: 8px;
     display: flex;
     flex-direction: column;
     gap: 1rem 1rem;
     border-radius: 15px;
-    box-shadow: 0 0 3px 1px black;;
+    box-shadow: 0 0 3px 1px black;
+    justify-content: space-between;
+    border-left: 5px solid #10b981;
+    
 }
 
-.quotes .card h5 {
+.quotes .cards .card h5 {
     font-size: 18px;
     font-weight: 800;
+}
+
+.quotes .cards .card .content {
+    align-self;
+}
+
+.main-container .quotes .cards .card .small-buttons {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    display: flex; 
+    justify-content: flex-end;
+    height: 36px;
+    weight: 36px;
+
 }
