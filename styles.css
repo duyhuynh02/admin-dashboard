@@ -102,7 +102,7 @@ h3 {
 
 /* HEADER */
 .header {
-    height: 30vh;
+    height: 40vh;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
@@ -201,6 +201,7 @@ h3 {
     display: grid;
     height: 100vh;
     grid-template-columns: 2fr 1fr;
+    grid-gap: 2rem;
 }
 
 .quotes {
@@ -210,9 +211,16 @@ h3 {
 }
 
 
-.quotes h4 {
+h4 {
     font-size: 24px;
     font-weight: 900;
+    margin-bottom: 8px;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 8px;
 }
 
 .quotes .cards {
@@ -250,4 +258,64 @@ h3 {
     height: 36px;
     weight: 36px;
 
+}
+
+/* News */
+.news {
+    display: grid; 
+    grid-template-rows: 0.5fr auto;
+    font-size: 14px;
+}
+
+
+/* Announcement */
+
+.annoucement {
+    display: grid; 
+    gap: 1rem 1rem; 
+    grid-template-rows: auto 1fr;
+    margin-bottom: 2rem;
+}
+
+.announce-cards {
+    display: flex; 
+    flex-direction: column;
+    box-shadow: 0 0 3px 1px black;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.announce-card {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid gray;
+}
+
+
+/* trending */
+
+.trendings {
+    grid-column: 2 / -1;
+}
+
+.trending {
+    display: grid; 
+    box-shadow: 0 0 3px 1px black;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.name {
+    margin: 1rem 1rem;
+}
+
+.character {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.trendings .trending .characters .character img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
